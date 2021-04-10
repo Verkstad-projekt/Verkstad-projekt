@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="se";>
+<head>
+    <title>Boka tid/besök</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <script type="text/javascript" src="main.js"></script>
+    <div class="mainbody">
+        <header>
+            <div class="head">
+                <a class="headlink" href=index.html>Hem</a>
+                <a class="headlink" href=ourwork.html>Vårt arbete</a>
+                <a class="headlink" href=prices.html>Priser</a>
+                <a class="headlink" href=booking.html>Bokning</a>
+                <a class="headlink" href=about.html>Om sidan</a>
+            </div>
+            <h1 class="headtxt">Bokning
+                </h1>
+        </header>
+    <p class="bread2" >Här kan du boka tid hos oss.</p>
+    <form class="bkform"action="booking.txt">
+        <label class="bread2" for="name">Skriv in för- och efternamn:</label><br>
+        <input type="text" id="name" name="name" value="">
+        <br>
+        <br>
+        <input type="radio" id="visit" name="reason" value="Jag vill besöka.">
+        <label class="bread2" for="visit">Jag vill besöka.</label>
+        <br>
+        <input type="radio" id="repair" name="reason" value="Jag vill boka verkstadstid">
+        <label class="bread2" for="repair">Jag vill boka verkstadstid</label>
+        <br>
+        <br>
+        <label class="bread2" for="mail">Skriv in fullständig mejladress:</label>
+        <br>
+        <input type="text" id="mail" name="mail" value="">
+        <br>
+        <br>
+        <label class="bread2" for="time">Skriv in förslag på tid och datum (Öppet 09.30-18.30 alla dagar):</label>
+        <br>
+        <input type="text" id="time" name="time" value="">
+        <br>
+        <br>
+        <label class="bread2" for="damages">För verkstadskunder: Beskriv kortfattat skadorna/problemen med fordonet:</label>
+        <br>
+        <input type="text" id="damages" name="damages" value="">
+        <br>
+        <br>
+        <!-- <input class="bread2" type="submit" value="Skicka"> -->
+        <br>
+    </form>
+    <button class="send" onclick="formClick()">Skicka</button>
+    <p id="sendbtn" class="bread2"></p>
+    </div>
+    <footer class="contactinfo">
+        Kontakta oss:
+        <br>
+        Telefon: xxx-xxx-xx-xx
+        <br>
+        E-mail:
+        <a class="mailto"href="mailto:verkstad.foretag.test123_mockupmail@mailcompanyrepair.com">verkstad.foretag.x@gmail.com</a>
+        <br>
+        <button class="top" onclick="back2top()" id="topBtn" title="TopPage">Tillbaka till toppen</button>
+    </footer>
+    </body>
+    </html>
